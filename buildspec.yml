@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+
+  install:
+    runtime-vesions:
+      nodejs: 10
+    commands:
+      - echo "installig something"
+  pre_build:
+    commands:
+      - echo "pre build"
+  build:
+    commands:
+      - echo "build time"
+      - echo "te time"
+      - grep -Fq "Sebas" inex.html
+  post_build:
+    commands:
+      - echo "post build phase"
