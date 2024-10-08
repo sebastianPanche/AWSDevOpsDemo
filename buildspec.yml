@@ -14,7 +14,7 @@ phases:
     commands:
       - echo "build time"
       - echo "te time"
-      - grep -Fq "Sebas" inex.html
+      - grep -Fq "Sebas" index.html
   post_build:
     commands:
       - echo "post build phase"
